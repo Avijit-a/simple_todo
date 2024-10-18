@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 40px;
+        }
+        header nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .task-list-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .filters {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .filters select, .filters input {
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .task-list {
+            list-style: none;
+            padding: 0;
+        }
+        .task {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .task .details {
+            flex: 1;
+        }
+        .task .actions button {
+            margin-left: 5px;
+        }
+        .add-task-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="App Logo">
+        <nav>
+            <a href="#">Add Task</a>
+            <a href="#">Categories</a>
+            <a href="#">Completed Tasks</a>
+            <a href="#">Profile</a>
+        </nav>
+        <img src="profile.jpg" alt="User Profile" style="height: 40px; border-radius: 50%;">
+    </header>
+    <div class="container">
+        <div class="task-list-title">To-Do List</div>
+        <div class="filters">
+            <select>
+                <option value="">All Categories</option>
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+            </select>
+            <select>
+                <option value="">All Priorities</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <input type="date">
+        </div>
+        <ul class="task-list">
+            <li class="task">
+                <div class="details">
+                    <div class="title">Task Title</div>
+                    <div class="description">Task Description</div>
+                    <div class="due-date">Due: 2023-10-10</div>
+                    <div class="priority" style="color: red;">High</div>
+                    <div class="category">Work</div>
+                </div>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                    <button>Complete</button>
+                    <button>Reminder</button>
+                </div>
+            </li>
+            <!-- More tasks can be added here -->
+        </ul>
+        <button class="add-task-btn">Add Task</button>
+    </div>
+    <footer>
+        &copy; 2023 To-Do List App
+    </footer>
+    <script>
+        // JavaScript code for handling task actions can be added here
+    </script>
+</body>
+</html>

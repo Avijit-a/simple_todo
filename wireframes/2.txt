@@ -1,0 +1,14 @@
+## Wireframe Outline for To-Do List Web Application
+
+**Page 3: Login Page**
+
+* **Header:**
+    * App logo and navigation links (e.g., Sign Up, About).
+* **Form Section:**
+    * Form title: "Log In".
+    * Input fields for email and password.
+    * "Log In" button.
+    * "Forgot your password?" link.
+    * "Don't have an account? Sign up." link.
+* **Footer:**
+    * Same as Landing Page footer. 

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - To-Do List App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .form-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .form-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .form-box h2 {
+            margin-bottom: 20px;
+        }
+        .form-box input[type="text"],
+        .form-box input[type="email"],
+        .form-box input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-box input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-box button:hover {
+            background-color: #45a049;
+        }
+        .form-box .login-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">To-Do List App</div>
+        <nav>
+            <a href="#">Login</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Create Your Account</h2>
+            <form id="signup-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                <div>
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <a href="#" class="login-link">Already have an account? Log in.</a>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 To-Do List App. All rights reserved.
+    </footer>
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add your form submission logic here
+            alert('Form submitted!');
+        });
+    </script>
+</body>
+</html>

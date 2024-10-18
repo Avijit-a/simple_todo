@@ -1,0 +1,25 @@
+## Wireframe Outline for To-Do List Web Application
+
+**Page 4: Dashboard**
+
+* **Header:**
+    * App logo, user profile picture, and navigation links (e.g., Add Task, Categories, Completed Tasks, Profile).
+* **Task List Section:**
+    * Title: "To-Do List".
+    * Filter options:
+        * Category dropdown.
+        * Priority filter (High, Medium, Low).
+        * Due date filter (Today, Tomorrow, This Week, This Month).
+    * Task list:
+        * Each task displays:
+            * Title.
+            * Description (optional).
+            * Due date.
+            * Priority level (color-coded).
+            * Category.
+            * Completion status (checkbox).
+            * Actions: Edit, Delete, Complete, Reminder.
+* **Add Task Button:**
+    * Prominent button to add new tasks.
+* **Footer:**
+    * Same as Landing Page footer. 

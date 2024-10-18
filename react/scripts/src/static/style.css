@@ -1,0 +1,50 @@
+ @font-face {
+   font-family: Gelixfont;
+   src: url("./Gellix.ttf");
+ }
+
+ body {
+   margin: 0;
+ }
+
+ body * {
+   font-family: Gelixfont, "Roboto", sans-serif !important;
+ }
+
+ .cogbar {
+   position: relative;
+   top: 0;
+   left: 0;
+   height: 10vh;
+   width: 100vw;
+   background-color: #000048;
+ }
+
+ .cogbar::after {
+   content: "";
+   position: absolute !important;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   margin: auto;
+   background-size: contain;
+   background-image: url(./CognizantLogo.png);
+   background-repeat: no-repeat;
+ }
+
+ .cogbar::before {
+   content: "";
+   position: absolute !important;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   margin-right: 1%;
+   width: 15%;
+   height: 70%;
+   background-size: contain;
+   background-position: left top, right top;
+   background-image: url(./IgnaiteLogo.png), url(./IgnaiteText3.png);
+   background-repeat: no-repeat, no-repeat;
+ }

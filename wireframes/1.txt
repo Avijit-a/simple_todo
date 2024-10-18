@@ -1,0 +1,15 @@
+## Wireframe Outline for To-Do List Web Application
+
+**Page 2: Sign Up Page**
+
+* **Header:**
+    * App logo and navigation links (e.g., Login, About).
+* **Form Section:**
+    * Form title: "Create Your Account".
+    * Input fields for email, username, and password.
+    * Password confirmation field.
+    * Checkbox for agreeing to terms and conditions.
+    * "Sign Up" button.
+    * "Already have an account? Log in." link.
+* **Footer:**
+    * Same as Landing Page footer. 
